@@ -184,3 +184,112 @@ g. Modifikasi kembali implementasi sebelumnya dengan konsep Single Action Contro
 Sehingga untuk hasil akhir yang didapatkan akan ada HomeController, 
 AboutController dan ArticleController. Modifikasi juga route yang 
 digunakan. 
+
+**Single Action Controller**
+
+![alt text](<resources/img/Screenshot 2024-02-25 141042.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 141052.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 141058.png>)
+
+**Routing**
+
+![alt text](<resources/img/Screenshot 2024-02-25 141125.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 141128.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 141131.png>)
+
+## Praktikum Membuat View 
+
+a. Pada direktori app/resources/views, buatlah file hello.blade.php.
+
+![alt text](<resources/img/Screenshot 2024-02-25 141742.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 142059.png>)
+
+b. View tersebut dapat dijalankan melalui Routing, dimana route akan memanggil View 
+sesuai dengan nama file tanpa ‘blade.php’. (Catatan: Gantilah Andi dengan nama Anda) 
+
+![alt text](<resources/img/Screenshot 2024-02-25 141745.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 142245.png>)
+
+c. Jalankan code dengan membuka url localhost/PWL_2024/public/greeting. Perhatikan 
+halaman yang muncul dan jelaskan pengamatan Anda. 
+
+Routing akan memanggil view sesuai dengan nama file kemudian view akan menampilkan nama yang sudah kita inputkan
+
+![alt text](<resources/img/Screenshot 2024-02-25 142215.png>)
+
+## Praktikum View dalam direktori 
+
+a. Buatlah direktori blog di dalam direktori views. 
+
+b. Pindahkan file hello.blade.php ke dalam direktori blog. 
+
+![alt text](<resources/img/Screenshot 2024-02-25 142700.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 143009.png>)
+
+c. Selanjutnya lakukan perubahan pada route. 
+
+![alt text](<resources/img/Screenshot 2024-02-25 142704.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 143014.png>)
+
+d. Jalankan code dengan membuka url localhost/PWL_2024/public/greeting. Perhatikan 
+halaman yang muncul dan jelaskan pengamatan Anda. 
+
+Hasil nya akan sama saja karena kita hanya menambah file baru yaitu blog pda views dan kita mengubah route agar mengarah ke file blog lalu ke hello.blade
+
+![alt text](<resources/img/Screenshot 2024-02-25 143022.png>)
+
+## Menampilkan View dari Controller
+
+a. Buka WelcomeController.php dan tambahkan fungsi baru yaitu greeting.
+
+![alt text](<resources/img/Screenshot 2024-02-25 143407 - Copy.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 143420 - Copy.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 143957.png>)
+
+b. Ubah route /greeting dan arahkan ke WelcomeController pada fungsi greeting.
+
+![alt text](<resources/img/Screenshot 2024-02-25 143424.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 144000.png>)
+
+c. Jalankan code dengan membuka url localhost/PWL_2024/public/greeting. Perhatikan 
+halaman yang muncul dan jelaskan pengamatan Anda. 
+
+ Pada kode program routing memanggil Controller 
+terlebih dahulu, dan Controller akan me-return view 
+
+![alt text](<resources/img/Screenshot 2024-02-25 144020.png>)
+
+## Praktikum Meneruskan data ke view 
+
+a. Buka WelcomeController.php dan tambahkan ubah fungsi greeting. 
+
+![alt text](<resources/img/Screenshot 2024-02-25 144617.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 144623.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 144814.png>)
+
+b. Ubah hello.blade.php agar dapat menampilkan dua parameter.
+
+![alt text](<resources/img/Screenshot 2024-02-25 144627.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 144814.png>)
+
+c. Jalankan code dengan membuka url localhost/PWL_2024/public/greeting. Perhatikan 
+halaman yang muncul dan jelaskan pengamatan Anda.
+
+Kontroler ini memiliki dua metode, yaitu hello() yang mengembalikan string "Hello World" dan greeting() yang mengembalikan sebuah view dengan nama blog.hello dan mengirimkan data variabel $name dengan nilai 'Andi' dan variabel $occupation dengan nilai 'Astronaut'. View tersebut kemudian menampilkan pesan "Hello, [nama]" dan "You are [pekerjaan]".
+
+![alt text](<resources/img/Screenshot 2024-02-25 144837.png>)
+
