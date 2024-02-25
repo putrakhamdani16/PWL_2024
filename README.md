@@ -1,15 +1,26 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+***Nama : Nanda Putra Khamdani*** <br>
+***Kelas : TI-2F***
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Praktikum Basic Routing
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+a. Pada bagian ini, kita akan membuat dua buah route dengan ketentuan sebagai berikut.
+
+b. Buka file routes/web.php. Tambahkan sebuah route untuk nomor 1 seperti di bawah ini:
+
+c. Buka browser, tuliskan URL untuk memanggil route tersebut: 
+localhost/PWL_2024/public/hello. Perhatikan halaman yang muncul apakah sudah sesuai dan jelaskan pengamatan Anda.
+
+d. Untuk membuat route kedua, tambahkan route /world seperti di bawah ini:
+
+e. Bukalah pada browser, tuliskan URL untuk memanggil route tersebut: 
+localhost/PWL_2024/public/world. Perhatikan halaman yang muncul apakah sudah 
+sesuai dan jelaskan pengamatan Anda. 
+
+f. 
+Selanjutnya, cobalah membuat route ’/’ yang menampilkan pesan ‘Selamat Datang’. 
+
+g. Kemudian buatlah route ‘/about’ yang akan menampilkan NIM dan nama Anda.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
