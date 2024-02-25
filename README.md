@@ -162,6 +162,24 @@ logika eksekusi ke dalam controller dengan nama PageController.
 
 ![alt text](<resources/img/Screenshot 2024-02-25 131713.png>)
 
+**Page Controller**
+
+![alt text](<resources/img/Screenshot 2024-02-25 135227.png>)
+
+**Routing**
+
+![alt text](<resources/img/Screenshot 2024-02-25 135243.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 135301.png>)
+
+**Hasil Search**
+
+![alt text](<resources/img/Screenshot 2024-02-25 135555.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 135605.png>)
+
+![alt text](<resources/img/Screenshot 2024-02-25 135617.png>)
+
 g. Modifikasi kembali implementasi sebelumnya dengan konsep Single Action Controller. 
 Sehingga untuk hasil akhir yang didapatkan akan ada HomeController, 
 AboutController dan ArticleController. Modifikasi juga route yang 

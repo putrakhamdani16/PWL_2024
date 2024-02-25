@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WelcomeController;
@@ -10,13 +11,9 @@ Route::get('/world', function () {
     return 'World'; 
 });
 
-Route::get('/', function () { 
-    return 'Selamat Datang'; 
-});
+Route::get('/index', [PageController::class,'index']);
 
-Route::get('/about', function () { 
-    return '2241720180 & Nanda Putra Khamdani'; 
-});
+Route::get('/about', [PageController::class,'about']);
 
 Route::get('/user/{name}', function ($name) { 
     return 'Nama saya '.$name; 
@@ -27,9 +24,7 @@ Route::get('/posts/{post}/comments/{comment}', function
 return 'Pos ke-'.$postId." Komentar ke-: ".$commentId; 
 }); 
 
-Route::get('/articles/{id}', function ($id) { 
-    return 'Halaman Artikel dengan ID  '.$id; 
-});
+Route::get('/articles/{id}', [PageController::class,'articles']);
 
 Route::get('/user/{name?}', function ($name='John') { 
     return 'Nama saya '.$name; 

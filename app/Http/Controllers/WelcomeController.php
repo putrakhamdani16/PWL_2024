@@ -8,5 +8,6 @@ class WelcomeController extends Controller
 {
     public function hello() { 
         return 'Hello World'; 
-    } 
+    }
+    
 }
