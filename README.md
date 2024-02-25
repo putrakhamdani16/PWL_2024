@@ -6,40 +6,59 @@
 
 a. Pada bagian ini, kita akan membuat dua buah route dengan ketentuan sebagai berikut.
 
+![alt text](<resources/img/Screenshot 2024-02-25 114631.png>)
+
 b. Buka file routes/web.php. Tambahkan sebuah route untuk nomor 1 seperti di bawah ini:
+(![alt text](<resources/img/Screenshot 2024-02-25 114959.png>))
+![alt text](<resources/img/Screenshot 2024-02-25 115028.png>)
 
 c. Buka browser, tuliskan URL untuk memanggil route tersebut: 
 localhost/PWL_2024/public/hello. Perhatikan halaman yang muncul apakah sudah sesuai dan jelaskan pengamatan Anda.
+![alt text](<resources/img/Screenshot 2024-02-25 121712.png>)
 
 d. Untuk membuat route kedua, tambahkan route /world seperti di bawah ini:
+![alt text](<resources/img/Screenshot 2024-02-25 122352.png>)
+![alt text](<resources/img/Screenshot 2024-02-25 122458.png>)
 
 e. Bukalah pada browser, tuliskan URL untuk memanggil route tersebut: 
 localhost/PWL_2024/public/world. Perhatikan halaman yang muncul apakah sudah 
 sesuai dan jelaskan pengamatan Anda. 
+![alt text](<resources/img/Screenshot 2024-02-25 122511.png>)
 
 f. 
 Selanjutnya, cobalah membuat route ’/’ yang menampilkan pesan ‘Selamat Datang’. 
+![alt text](<resources/img/Screenshot 2024-02-25 122831.png>)
+![alt text](<resources/img/Screenshot 2024-02-25 122843.png>)
 
 g. Kemudian buatlah route ‘/about’ yang akan menampilkan NIM dan nama Anda.
+![alt text](<resources/img/Screenshot 2024-02-25 122848.png>)
+![alt text](<resources/img/Screenshot 2024-02-25 122900.png>)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Praktikum Route Parameters 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+a. Kita akan memanggil route /user/{name} sekaligus mengirimkan parameter berupa nama user $name seperti kode di bawah ini. 
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![alt text](<resources/img/Screenshot 2024-02-25 123855.png>)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+b. Jalankan kode dengan menuliskan URL untuk memanggil route tersebut: 
+localhost/PWL_2024/public/user/NamaAnda. Perhatikan halaman yang muncul dan 
+jelaskan pengamatan Anda. 
 
+c. Selanjutnya, coba tuliskan URL: localhost/PWL_2024/public/user/. Perhatikan 
+halaman yang muncul dan jelaskan pengamatan Anda
+
+d. Suatu route, juga bisa menerima lebih dari 1 parameter seperti kode berikut ini. Route 
+menerima parameter $postId dan juga $comment. 
+![alt text](<resources/img/Screenshot 2024-02-25 123904.png>)
+
+e. Jalankan kode dengan menuliskan URL untuk memanggil route tersebut: 
+localhost/PWL_2024/public/posts/1/comments/5. Perhatikan halaman yang muncul 
+dan jelaskan pengamatan Anda.
+
+f. Kemudian buatlah route /articles/{id} yang akan menampilkan output “Halaman Artikel 
+dengan ID {id}”, ganti id sesuai dengan input dari url. 
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
